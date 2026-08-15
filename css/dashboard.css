@@ -1,0 +1,646 @@
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-body {
+    margin: 0;
+    font-family: Poppins, Arial, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background: #0b2545;
+    padding: 25px 18px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.dashboard-logo {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 700;
+    padding: 5px 12px 35px;
+}
+
+.dashboard-logo span {
+    color: #d4af37;
+}
+
+
+/* NAVIGATION */
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.sidebar nav a {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 13px 14px;
+    color: #dbe5f2;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: .25s;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    background: rgba(255,255,255,.12);
+    color: #ffffff;
+}
+
+.sidebar nav a.active {
+    border-left: 3px solid #d4af37;
+}
+
+
+/* LOGOUT */
+
+.logout-btn {
+    margin-top: auto;
+    border: 0;
+    background: transparent;
+    color: #dbe5f2;
+    padding: 13px 14px;
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.logout-btn:hover {
+    background: rgba(255,255,255,.12);
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.dashboard-main {
+    margin-left: 250px;
+    padding: 30px 5%;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.dashboard-welcome span {
+    color: #7c8798;
+    font-size: 13px;
+}
+
+.dashboard-welcome h2 {
+    margin: 3px 0 0;
+    font-size: 23px;
+}
+
+.user-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #d4af37;
+    color: #0b2545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+/* =========================
+   SIDEBAR PROFILE LINK
+========================= */
+
+.sidebar-nav a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 15px;
+
+    text-decoration: none;
+    color: #555;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+.sidebar-nav a:hover {
+    background: #f1f5ff;
+    color: #2563eb;
+}
+
+.sidebar-nav a span {
+    display: inline-block;
+}
+
+
+/* ACTIVE PROFILE */
+
+.sidebar-nav a[href="profile.html"] {
+    color: #2563eb;
+}
+
+.sidebar-nav a[href="profile.html"]:hover {
+    background: #eaf0ff;
+}
+
+
+/* MENU BUTTON */
+
+.menu-btn {
+    display: none;
+    border: 0;
+    background: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   WALLET
+========================= */
+
+.wallet-card {
+    background: #0b2545;
+    color: #ffffff;
+    border-radius: 18px;
+    padding: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    box-shadow: 0 10px 30px rgba(11,37,69,.15);
+}
+
+.wallet-card span {
+    color: #cbd7e5;
+    font-size: 13px;
+}
+
+.wallet-card h1 {
+    margin: 7px 0 0;
+    font-size: 32px;
+}
+
+.fund-wallet {
+    border: 0;
+    background: #d4af37;
+    color: #0b2545;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.dashboard-section {
+    margin-bottom: 40px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.section-heading h3 {
+    margin: 0;
+    font-size: 19px;
+}
+
+.section-heading span,
+.section-heading a {
+    color: #7c8798;
+    font-size: 13px;
+}
+
+.section-heading a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 22px 16px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #172033;
+    box-shadow: 0 5px 20px rgba(20,35,60,.06);
+    transition: .25s;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(20,35,60,.1);
+}
+
+.service-icon {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.service-card strong {
+    display: block;
+    font-size: 15px;
+}
+
+.service-card small {
+    display: block;
+    margin-top: 5px;
+    color: #8a94a6;
+    font-size: 12px;
+}
+
+
+/* =========================
+   TRANSACTIONS
+========================= */
+
+.empty-transactions {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 45px 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(20,35,60,.06);
+}
+
+.empty-transactions > div {
+    font-size: 35px;
+}
+
+.empty-transactions h4 {
+    margin: 12px 0 5px;
+    font-size: 16px;
+}
+
+.empty-transactions p {
+    margin: 0;
+    color: #8a94a6;
+    font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        transform: translateX(-100%);
+        transition: .3s;
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    .dashboard-main {
+        margin-left: 0;
+        padding: 20px 16px;
+    }
+
+    .dashboard-header {
+        gap: 15px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .wallet-card {
+        padding: 22px;
+        gap: 15px;
+    }
+
+    .wallet-card h1 {
+        font-size: 27px;
+    }
+
+    .fund-wallet {
+        padding: 10px 13px;
+        font-size: 12px;
+    }
+
+}
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    box-shadow: 0 5px 20px rgba(20,35,60,.06);
+}
+
+.profile-avatar {
+    width: 75px;
+    height: 75px;
+    min-width: 75px;
+    border-radius: 50%;
+    background: #d4af37;
+    color: #0b2545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.profile-details {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.profile-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile-item span {
+    color: #8a94a6;
+    font-size: 12px;
+}
+
+.profile-item strong {
+    color: #172033;
+    font-size: 14px;
+    word-break: break-word;
+}
+
+.status-active {
+    color: #16803c !important;
+}
+
+
+/* =========================
+   MOBILE PROFILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .profile-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 22px 18px;
+    }
+
+    .profile-details {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 16px;
+    }
+
+}
+
+/* =========================
+   FUND WALLET MODAL
+========================= */
+
+.fund-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    z-index: 2000;
+}
+
+
+.fund-modal.active {
+    display: flex;
+}
+
+
+.fund-modal-content {
+    position: relative;
+
+    width: 100%;
+    max-width: 450px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.fund-modal-close {
+    position: absolute;
+
+    top: 15px;
+    right: 18px;
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    line-height: 1;
+}
+
+
+.fund-modal-header {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+
+.fund-icon {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+
+.fund-modal-header h2 {
+    margin: 0 0 8px;
+}
+
+
+.fund-modal-header p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+.amount-input {
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    margin-top: 8px;
+}
+
+
+.amount-input span {
+    padding-left: 15px;
+
+    font-size: 18px;
+
+    font-weight: 600;
+}
+
+
+.amount-input input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    padding: 14px 10px;
+
+    font-size: 18px;
+}
+
+
+.quick-amounts {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 10px;
+
+    margin: 20px 0;
+}
+
+
+.quick-amount {
+    border: 1px solid #ddd;
+
+    background: #f8f8f8;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+
+.quick-amount:hover {
+    background: #eee;
+}
+
+
+.fund-submit {
+    width: 100%;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    background: #0b2545;
+
+    color: white;
+}
+
+
+@media (max-width: 480px) {
+
+    .fund-modal-content {
+        padding: 25px 20px;
+    }
+
+}
