@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cable TV | Jodek PAY</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/services.css">
+
+</head>
+
+
+<body class="service-body">
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="service-header">
+
+        <a href="dashboard.html"
+           class="back-dashboard">
+
+            ← Dashboard
+
+        </a>
+
+
+        <div class="service-logo">
+
+            JODEK <span>PAY</span>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="service-main">
+
+
+        <!-- ================= INTRO ================= -->
+
+        <section class="service-intro">
+
+            <div class="service-big-icon">
+                📺
+            </div>
+
+            <div>
+
+                <p class="service-label">
+                    CABLE TV
+                </p>
+
+                <h1>
+                    Pay Your Cable
+                    <span>Subscription</span>
+                </h1>
+
+                <p>
+                    Renew your DStv or GOtv subscription
+                    quickly and securely with JODEK PAY.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <section class="service-layout">
+
+
+            <!-- ================= FORM ================= -->
+
+            <div class="service-card-form">
+
+
+                <div class="form-heading">
+
+                    <h2>
+                        Cable Subscription
+                    </h2>
+
+                    <p>
+                        Enter your subscription details
+                        below.
+                    </p>
+
+                </div>
+
+
+
+                <form id="cableForm">
+
+
+                    <!-- PROVIDER -->
+
+                    <div class="form-group">
+
+                        <label for="cableProvider">
+                            Select Provider
+                        </label>
+
+                        <select
+                            id="cableProvider"
+                            name="cableProvider"
+                            required>
+
+                            <option value="">
+                                Select cable provider
+                            </option>
+
+                            <option value="dstv">
+                                DStv
+                            </option>
+
+                            <option value="gotv">
+                                GOtv
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- SMARTCARD -->
+
+                    <div class="form-group">
+
+                        <label for="smartcardNumber">
+                            Smartcard / IUC Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="smartcardNumber"
+                            name="smartcardNumber"
+                            placeholder="Enter Smartcard or IUC number"
+                            inputmode="numeric"
+                            autocomplete="off"
+                            required
+                        >
+
+                        <small>
+                            Enter the number registered to
+                            your DStv or GOtv account.
+                        </small>
+
+                    </div>
+
+
+
+                    <!-- VERIFY -->
+
+                    <button
+                        type="button"
+                        class="secondary-action"
+                        id="verifyCustomerBtn">
+
+                        Verify Customer
+
+                    </button>
+
+
+
+                    <!-- CUSTOMER RESULT -->
+
+                    <div
+                        class="customer-result"
+                        id="customerResult"
+                        hidden>
+
+                        <div class="verified-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <strong id="customerName">
+                                Customer Name
+                            </strong>
+
+                            <small id="customerNumber">
+                                Smartcard Number
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PACKAGE -->
+
+                    <div class="form-group">
+
+                        <label for="cablePackage">
+                            Select Package
+                        </label>
+
+                        <select
+                            id="cablePackage"
+                            name="cablePackage"
+                            required>
+
+                            <option value="">
+                                Select package
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- AMOUNT -->
+
+                    <div class="form-group">
+
+                        <label for="cableAmount">
+                            Amount
+                        </label>
+
+                        <div class="amount-input">
+
+                            <span>
+                                ₦
+                            </span>
+
+                            <input
+                                type="number"
+                                id="cableAmount"
+                                name="cableAmount"
+                                placeholder="0.00"
+                                readonly
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- SUMMARY -->
+
+                    <div class="payment-summary">
+
+
+                        <div>
+
+                            <span>
+                                Service
+                            </span>
+
+                            <strong id="summaryProvider">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Package
+                            </span>
+
+                            <strong id="summaryPackage">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Amount
+                            </span>
+
+                            <strong id="summaryAmount">
+                                ₦0.00
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        type="submit"
+                        class="service-submit"
+                        id="payCableBtn">
+
+                        Continue
+
+                    </button>
+
+
+                </form>
+
+            </div>
+
+
+
+            <!-- ================= SIDE INFORMATION ================= -->
+
+            <aside class="service-sidebar">
+
+
+                <!-- WALLET -->
+
+                <div class="balance-card">
+
+                    <span>
+                        Wallet Balance
+                    </span>
+
+                    <strong id="walletBalance">
+                        ₦0.00
+                    </strong>
+
+                    <a href="dashboard.html">
+                        + Fund Wallet
+                    </a>
+
+                </div>
+
+
+
+                <!-- INFO -->
+
+                <div class="info-card">
+
+                    <div>
+                        💡
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Before you continue
+                        </strong>
+
+                        <p>
+                            Make sure the Smartcard/IUC
+                            number and subscription package
+                            are correct.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SECURITY -->
+
+                <div class="info-card">
+
+                    <div>
+                        🔒
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Secure Payment
+                        </strong>
+
+                        <p>
+                            Your transaction will be
+                            processed securely through
+                            your JODEK PAY wallet.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </aside>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= SUPABASE ================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="js/services.js"></script>
+
+
+</body>
+
+</html>

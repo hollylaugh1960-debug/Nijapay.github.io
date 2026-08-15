@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Buy Data | Jodek PAY</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/services.css">
+
+</head>
+
+
+<body class="service-body">
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="service-header">
+
+    <a href="dashboard.html"
+       class="back-dashboard">
+
+        ←
+        <span>Dashboard</span>
+
+    </a>
+
+
+    <a href="dashboard.html"
+       class="service-logo">
+
+        JODEK <span>PAY</span>
+
+    </a>
+
+
+    <div class="service-wallet">
+
+        Wallet:
+        <strong id="dataWalletBalance">
+            ₦0.00
+        </strong>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="service-main">
+
+
+    <!-- =================================================
+         INTRO
+    ================================================== -->
+
+    <section class="service-intro">
+
+        <div class="service-intro-icon">
+            📶
+        </div>
+
+        <p class="service-label">
+            MOBILE INTERNET
+        </p>
+
+        <h1>
+            Buy <span>Data</span>
+        </h1>
+
+        <p>
+            Get affordable internet data bundles
+            for all major Nigerian networks.
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+         CONTENT
+    ================================================== -->
+
+    <section class="airtime-layout">
+
+
+        <!-- =================================================
+             FORM CARD
+        ================================================== -->
+
+        <div class="airtime-card">
+
+
+            <div class="card-heading">
+
+                <h2>
+                    Data Purchase
+                </h2>
+
+                <p>
+                    Enter your details below
+                    to continue.
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 NETWORK
+            ================================================== -->
+
+            <div class="form-group">
+
+                <label for="dataNetwork">
+                    Select Network
+                </label>
+
+
+                <select
+                    id="dataNetwork"
+                    required>
+
+                    <option value="">
+                        Select Network
+                    </option>
+
+                    <option value="mtn">
+                        MTN
+                    </option>
+
+                    <option value="airtel">
+                        Airtel
+                    </option>
+
+                    <option value="glo">
+                        Glo
+                    </option>
+
+                    <option value="9mobile">
+                        9mobile
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PHONE NUMBER
+            ================================================== -->
+
+            <div class="form-group">
+
+                <label for="dataPhone">
+                    Phone Number
+                </label>
+
+
+                <input
+                    type="tel"
+                    id="dataPhone"
+                    placeholder="08012345678"
+                    maxlength="11"
+                    inputmode="numeric"
+                    autocomplete="tel"
+                    required
+                >
+
+
+                <small>
+                    Enter the Nigerian phone number
+                    you want to purchase data for.
+                </small>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 DATA PLAN
+            ================================================== -->
+
+            <div class="form-group">
+
+                <label for="dataPlan">
+                    Data Plan
+                </label>
+
+
+                <select
+                    id="dataPlan"
+                    required>
+
+                    <option value="">
+                        Select Data Plan
+                    </option>
+
+                    <option value="500MB">
+                        500MB
+                    </option>
+
+                    <option value="1GB">
+                        1GB
+                    </option>
+
+                    <option value="2GB">
+                        2GB
+                    </option>
+
+                    <option value="3GB">
+                        3GB
+                    </option>
+
+                    <option value="5GB">
+                        5GB
+                    </option>
+
+                    <option value="10GB">
+                        10GB
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PLAN TYPE
+            ================================================== -->
+
+            <div class="form-group">
+
+                <label for="planType">
+                    Plan Type
+                </label>
+
+
+                <select
+                    id="planType"
+                    required>
+
+                    <option value="">
+                        Select Plan Type
+                    </option>
+
+                    <option value="daily">
+                        Daily
+                    </option>
+
+                    <option value="weekly">
+                        Weekly
+                    </option>
+
+                    <option value="monthly">
+                        Monthly
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 AMOUNT
+            ================================================== -->
+
+            <div class="form-group">
+
+                <label for="dataAmount">
+                    Amount
+                </label>
+
+
+                <div class="amount-input">
+
+                    <span>
+                        ₦
+                    </span>
+
+                    <input
+                        type="number"
+                        id="dataAmount"
+                        placeholder="Enter amount"
+                        min="50"
+                        inputmode="numeric"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PURCHASE
+            ================================================== -->
+
+            <button
+                type="button"
+                class="purchase-button"
+                id="purchaseData">
+
+                Buy Data
+
+            </button>
+
+
+            <p class="secure-note">
+                🔒 Secure transaction
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SUMMARY
+        ================================================== -->
+
+        <aside class="airtime-summary">
+
+
+            <!-- WALLET -->
+
+            <div class="balance-card">
+
+                <span>
+                    Wallet Balance
+                </span>
+
+                <strong id="dataWalletBalanceSide">
+                    ₦0.00
+                </strong>
+
+                <a href="dashboard.html">
+                    + Fund Wallet
+                </a>
+
+            </div>
+
+
+
+            <!-- ORDER SUMMARY -->
+
+            <div class="summary-card">
+
+                <h3>
+                    Order Summary
+                </h3>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Network
+                    </span>
+
+                    <strong id="dataSummaryNetwork">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Phone
+                    </span>
+
+                    <strong id="dataSummaryPhone">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Data Plan
+                    </span>
+
+                    <strong id="dataSummaryPlan">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Plan Type
+                    </span>
+
+                    <strong id="dataSummaryType">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="dataSummaryTotal">
+                        ₦0.00
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- INFORMATION -->
+
+            <div class="info-card">
+
+                <div>
+                    💡
+                </div>
+
+                <div>
+
+                    <strong>
+                        Before you continue
+                    </strong>
+
+                    <p>
+                        Make sure the phone number,
+                        network and data plan are correct.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </aside>
+
+
+    </section>
+
+</main>
+
+
+
+<!-- =====================================================
+     SUPABASE
+===================================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+</script>
+
+
+<script src="js/services.js">
+</script>
+
+
+</body>
+
+</html>

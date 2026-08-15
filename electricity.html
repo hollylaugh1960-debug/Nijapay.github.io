@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Electricity | Jodek PAY</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/services.css">
+
+</head>
+
+
+<body class="service-body">
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="service-header">
+
+        <a href="dashboard.html"
+           class="back-dashboard">
+
+            ← Dashboard
+
+        </a>
+
+
+        <div class="service-logo">
+
+            JODEK <span>PAY</span>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="service-main">
+
+
+        <!-- ================= INTRO ================= -->
+
+        <section class="service-intro">
+
+            <div class="service-big-icon">
+                ⚡
+            </div>
+
+            <div>
+
+                <p class="service-label">
+                    ELECTRICITY
+                </p>
+
+                <h1>
+                    Pay Your Electricity
+                    <span>Bill</span>
+                </h1>
+
+                <p>
+                    Pay your electricity bill quickly
+                    and securely with JODEK PAY.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <section class="service-layout">
+
+
+            <!-- ================= FORM ================= -->
+
+            <div class="service-card-form">
+
+
+                <div class="form-heading">
+
+                    <h2>
+                        Electricity Payment
+                    </h2>
+
+                    <p>
+                        Enter your electricity details
+                        below.
+                    </p>
+
+                </div>
+
+
+
+                <form id="electricityForm">
+
+
+                    <!-- ================= PROVIDER ================= -->
+
+                    <div class="form-group">
+
+                        <label for="disco">
+                            Electricity Provider
+                        </label>
+
+                        <select
+                            id="disco"
+                            name="disco"
+                            required>
+
+                            <option value="">
+                                Select electricity provider
+                            </option>
+
+                            <option value="abuja">
+                                AEDC
+                            </option>
+
+                            <option value="ikeja">
+                                Ikeja Electric
+                            </option>
+
+                            <option value="eko">
+                                Eko Electricity
+                            </option>
+
+                            <option value="ibadan">
+                                Ibadan Electricity
+                            </option>
+
+                            <option value="enugu">
+                                Enugu Electricity
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- ================= METER TYPE ================= -->
+
+                    <div class="form-group">
+
+                        <label for="meterType">
+                            Meter Type
+                        </label>
+
+                        <select
+                            id="meterType"
+                            name="meterType"
+                            required>
+
+                            <option value="">
+                                Select meter type
+                            </option>
+
+                            <option value="prepaid">
+                                Prepaid
+                            </option>
+
+                            <option value="postpaid">
+                                Postpaid
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- ================= METER NUMBER ================= -->
+
+                    <div class="form-group">
+
+                        <label for="meterNumber">
+                            Meter Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="meterNumber"
+                            name="meterNumber"
+                            placeholder="Enter meter number"
+                            inputmode="numeric"
+                            autocomplete="off"
+                            required>
+
+                        <small>
+                            Enter the meter number
+                            registered with your electricity provider.
+                        </small>
+
+                    </div>
+
+
+
+                    <!-- ================= AMOUNT ================= -->
+
+                    <div class="form-group">
+
+                        <label for="electricityAmount">
+                            Amount
+                        </label>
+
+
+                        <div class="amount-input">
+
+                            <span>
+                                ₦
+                            </span>
+
+                            <input
+                                type="number"
+                                id="electricityAmount"
+                                name="electricityAmount"
+                                placeholder="5,000"
+                                min="100"
+                                step="100"
+                                inputmode="numeric"
+                                required>
+
+                        </div>
+
+
+                        <small>
+                            Minimum electricity payment: ₦100
+                        </small>
+
+                    </div>
+
+
+
+                    <!-- ================= SUMMARY ================= -->
+
+                    <div class="payment-summary">
+
+
+                        <div>
+
+                            <span>
+                                Provider
+                            </span>
+
+                            <strong id="summaryDisco">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Meter Type
+                            </span>
+
+                            <strong id="summaryMeterType">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Meter Number
+                            </span>
+
+                            <strong id="summaryMeterNumber">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Amount
+                            </span>
+
+                            <strong id="summaryElectricityAmount">
+                                ₦0.00
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- ================= SUBMIT ================= -->
+
+                    <button
+                        type="submit"
+                        class="service-submit"
+                        id="payElectricityBtn">
+
+                        Continue
+
+                    </button>
+
+
+                </form>
+
+            </div>
+
+
+
+            <!-- ================= SIDEBAR ================= -->
+
+            <aside class="service-sidebar">
+
+
+                <!-- WALLET -->
+
+                <div class="balance-card">
+
+                    <span>
+                        Wallet Balance
+                    </span>
+
+                    <strong id="walletBalance">
+                        ₦0.00
+                    </strong>
+
+                    <a href="dashboard.html">
+                        + Fund Wallet
+                    </a>
+
+                </div>
+
+
+
+                <!-- INFORMATION -->
+
+                <div class="info-card">
+
+                    <div>
+                        💡
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Before you continue
+                        </strong>
+
+                        <p>
+                            Make sure your electricity
+                            provider, meter type and meter
+                            number are correct.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SECURITY -->
+
+                <div class="info-card">
+
+                    <div>
+                        🔒
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Secure Payment
+                        </strong>
+
+                        <p>
+                            Your transaction will be
+                            processed securely through
+                            your JODEK PAY wallet.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </aside>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= SUPABASE ================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="js/services.js"></script>
+
+
+</body>
+
+</html>

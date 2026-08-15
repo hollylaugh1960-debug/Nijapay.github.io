@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Buy Airtime | Jodek PAY</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/services.css">
+
+</head>
+
+
+<body class="service-body">
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="service-header">
+
+    <a href="dashboard.html"
+       class="back-dashboard">
+
+        ←
+        <span>Dashboard</span>
+
+    </a>
+
+
+    <a href="dashboard.html"
+       class="service-logo">
+
+        JODEK <span>PAY</span>
+
+    </a>
+
+
+    <div class="service-wallet">
+
+        Wallet:
+        <strong id="walletBalance">
+            ₦0.00
+        </strong>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="service-main">
+
+
+    <!-- =================================================
+         INTRO
+    ================================================== -->
+
+    <section class="service-intro">
+
+        <div class="service-intro-icon">
+            📱
+        </div>
+
+
+        <p class="service-label">
+            MOBILE RECHARGE
+        </p>
+
+
+        <h1>
+            Buy <span>Airtime</span>
+        </h1>
+
+
+        <p>
+            Recharge any Nigerian network
+            quickly and securely.
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+         CONTENT
+    ================================================== -->
+
+    <section class="airtime-layout">
+
+
+        <!-- =================================================
+             FORM CARD
+        ================================================== -->
+
+        <div class="airtime-card">
+
+
+            <div class="card-heading">
+
+                <h2>
+                    Airtime Recharge
+                </h2>
+
+                <p>
+                    Enter the details below
+                    to continue.
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 NETWORK
+            ================================================== -->
+
+            <div class="form-group">
+
+                <label>
+                    Select Network
+                </label>
+
+
+                <div class="network-grid">
+
+
+                    <!-- MTN -->
+
+                    <label class="network-option">
+
+                        <input
+                            type="radio"
+                            name="network"
+                            value="mtn"
+                            checked
+                        >
+
+                        <span>
+
+                            <img
+                                src="images/mtn.png"
+                                alt="MTN">
+
+                            <strong>
+                                MTN
+                            </strong>
+
+                        </span>
+
+                    </label>
+
+
+
+                    <!-- AIRTEL -->
+
+                    <label class="network-option">
+
+                        <input
+                            type="radio"
+                            name="network"
+                            value="airtel"
+                        >
+
+                        <span>
+
+                            <img
+                                src="images/airtel.jpg"
+                                alt="Airtel">
+
+                            <strong>
+                                Airtel
+                            </strong>
+
+                        </span>
+
+                    </label>
+
+
+
+                    <!-- GLO -->
+
+                    <label class="network-option">
+
+                        <input
+                            type="radio"
+                            name="network"
+                            value="glo"
+                        >
+
+                        <span>
+
+                            <img
+                                src="images/glo.jpg"
+                                alt="Glo">
+
+                            <strong>
+                                Glo
+                            </strong>
+
+                        </span>
+
+                    </label>
+
+
+
+                    <!-- 9MOBILE -->
+
+                    <label class="network-option">
+
+                        <input
+                            type="radio"
+                            name="network"
+                            value="9mobile"
+                        >
+
+                        <span>
+
+                            <div class="network-placeholder">
+                                9
+                            </div>
+
+                            <strong>
+                                9mobile
+                            </strong>
+
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PHONE NUMBER
+            ================================================== -->
+
+            <div class="form-group">
+
+                <label for="phoneNumber">
+                    Phone Number
+                </label>
+
+
+                <input
+                    type="tel"
+                    id="phoneNumber"
+                    placeholder="08012345678"
+                    maxlength="11"
+                    inputmode="numeric"
+                    autocomplete="tel"
+                >
+
+
+                <small>
+                    Enter the Nigerian phone number
+                    you want to recharge.
+                </small>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 AMOUNT
+            ================================================== -->
+
+            <div class="form-group">
+
+                <label for="airtimeAmount">
+                    Airtime Amount
+                </label>
+
+
+                <div class="amount-input">
+
+                    <span>
+                        ₦
+                    </span>
+
+                    <input
+                        type="number"
+                        id="airtimeAmount"
+                        placeholder="1,000"
+                        min="50"
+                        step="50"
+                        inputmode="numeric"
+                    >
+
+                </div>
+
+
+                <small>
+                    Minimum airtime purchase: ₦50
+                </small>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 QUICK AMOUNTS
+            ================================================== -->
+
+            <div class="quick-amounts">
+
+                <button
+                    type="button"
+                    class="quick-amount"
+                    data-amount="100">
+
+                    ₦100
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="quick-amount"
+                    data-amount="200">
+
+                    ₦200
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="quick-amount"
+                    data-amount="500">
+
+                    ₦500
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="quick-amount"
+                    data-amount="1000">
+
+                    ₦1,000
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="quick-amount"
+                    data-amount="2000">
+
+                    ₦2,000
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="quick-amount"
+                    data-amount="5000">
+
+                    ₦5,000
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PURCHASE
+            ================================================== -->
+
+            <button
+                type="button"
+                class="purchase-button"
+                id="purchaseAirtime">
+
+                Buy Airtime
+
+            </button>
+
+
+            <p class="secure-note">
+                🔒 Secure transaction
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             RIGHT SIDE
+        ================================================== -->
+
+        <aside class="airtime-summary">
+
+
+            <!-- WALLET -->
+
+            <div class="balance-card">
+
+                <span>
+                    Wallet Balance
+                </span>
+
+                <strong id="walletBalanceSide">
+                    ₦0.00
+                </strong>
+
+                <a href="dashboard.html">
+                    + Fund Wallet
+                </a>
+
+            </div>
+
+
+
+            <!-- SUMMARY -->
+
+            <div class="summary-card">
+
+                <h3>
+                    Order Summary
+                </h3>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Network
+                    </span>
+
+                    <strong id="summaryNetwork">
+                        MTN
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Phone
+                    </span>
+
+                    <strong id="summaryPhone">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Amount
+                    </span>
+
+                    <strong id="summaryAmount">
+                        ₦0.00
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="summaryTotal">
+                        ₦0.00
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- INFORMATION -->
+
+            <div class="info-card">
+
+                <div>
+                    💡
+                </div>
+
+                <div>
+
+                    <strong>
+                        Before you continue
+                    </strong>
+
+                    <p>
+                        Make sure the phone number
+                        and network are correct.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </aside>
+
+
+    </section>
+
+</main>
+
+
+
+<!-- =====================================================
+     SUPABASE
+===================================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+</script>
+
+
+<script src="js/services.js">
+</script>
+
+
+</body>
+
+</html>

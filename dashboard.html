@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Jodek PAY</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+</head>
+
+
+<body class="dashboard-body">
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="dashboard-logo">
+      JODEK <span>PAY</span>
+        </div>
+
+
+        <nav>
+
+ <a href="dashboard.html" class="active">
+                🏠
+    <span>Dashboard</span>
+            </a>
+
+<a href="#"> 💰<span>Wallet</span>
+            </a>
+ <a href="airtime.html">
+    📱 <span>Airtime</span>
+</a>
+
+
+<a href="data.html">📶<span>Data</span>
+            </a>
+<a href="cable.html">
+    📺 <span>Cable TV</span>
+</a>
+<a href="electricity.html">⚡<span>Electricity</span>
+            </a>
+<a href="#">📜<span>Transactions</span>
+            </a>
+
+<a href="profile.html" class="profile-link">
+    <span class="profile-avatar">👤</span>
+
+    <span>
+        <strong id="dashboardUserName">User</strong>
+        <small>My Profile</small>
+    </span>
+</a>
+
+        </nav>
+
+<button id="logoutBtn" class="logout-btn">🚪
+            <span>Logout</span>
+        </button>
+
+    </aside>
+
+
+
+    <!-- MAIN -->
+
+    <main class="dashboard-main">
+
+
+        <!-- TOP BAR -->
+
+        <header class="dashboard-header">
+<button id="menuBtn"
+                  class="menu-btn">
+                ☰
+            </button>
+
+
+            <div class="dashboard-welcome">
+<span>Welcome back</span>
+ <h2 id="userName">User </h2>
+
+            </div>
+
+
+<a href="profile.html">
+  <div class="user-avatar"
+     id="userAvatar"> U
+     
+ </div> 
+</a>
+
+ </header>
+
+
+
+       <!-- WALLET -->
+
+<section class="wallet-card">
+
+    <div>
+
+        <span>Wallet Balance</span>
+
+        <h1 id="walletBalance">
+            ₦0.00
+        </h1>
+
+    </div>
+    
+    <button
+    class="fund-wallet"
+    id="fundWalletBtn">
+    + Fund Wallet
+</button>
+
+</section>
+
+
+<!-- FUND WALLET MODAL -->
+
+<div
+    class="fund-modal"
+    id="fundWalletModal"
+    aria-hidden="true">
+
+    <div class="fund-modal-content">
+
+        <button
+            class="fund-modal-close"
+            id="closeFundModal"
+            type="button">
+
+            ×
+
+        </button>
+
+
+        <div class="fund-modal-header">
+
+            <div class="fund-icon">
+                💰
+            </div>
+
+            <h2>
+                Fund Wallet
+            </h2>
+
+            <p>
+                Enter the amount you want to add
+                to your wallet.
+            </p>
+
+        </div>
+
+
+        <form id="fundWalletForm">
+
+            <div class="form-group">
+
+                <label for="fundAmount">
+                    Amount
+                </label>
+
+
+                <div class="amount-input">
+
+                    <span>₦</span>
+
+                    <input
+                        type="number"
+                        id="fundAmount"
+                        name="fundAmount"
+                        placeholder="5,000"
+                        min="100"
+                        step="100"
+                        required
+                    >
+
+                </div>
+
+
+                <small>
+                    Minimum funding amount: ₦100
+                </small>
+
+            </div>
+
+
+            <div class="quick-amounts">
+
+                <button
+                    type="button"
+                    class="quick-amount"
+                    data-amount="1000">
+
+                    ₦1,000
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="quick-amount"
+                    data-amount="2000">
+
+                    ₦2,000
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="quick-amount"
+                    data-amount="5000">
+
+                    ₦5,000
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="quick-amount"
+                    data-amount="10000">
+
+                    ₦10,000
+
+                </button>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="fund-submit">
+
+                Continue to Payment
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+        <!-- QUICK SERVICES -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <h3>
+                    Quick Services
+                </h3>
+
+                <span>
+                    Select a service
+                </span>
+
+            </div>
+
+
+            <div class="services-grid">
+
+
+    <a href="airtime.html" class="service-card">
+
+                    <div class="service-icon">
+                        📱
+                    </div>
+
+                    <strong>
+                        Airtime
+                    </strong>
+
+                    <small>
+                        Recharge
+                    </small>
+
+                </a>
+
+
+  <a href="data.html" class="service-card">
+
+                    <div class="service-icon">
+                        📶
+                    </div>
+
+                    <strong>
+                        Data
+                    </strong>
+
+                    <small>
+                        Internet bundles
+                    </small>
+
+                </a>
+
+
+  <a href="cable.html" class="service-card">
+
+                    <div class="service-icon">
+                        📺
+                    </div>
+
+                    <strong>
+                        Cable TV
+                    </strong>
+
+                    <small>
+                        TV subscription
+                    </small>
+
+                </a>
+
+
+ <a href="electricity.html" class="service-card">
+
+                    <div class="service-icon">
+                        ⚡
+                    </div>
+
+                    <strong>
+                        Electricity
+                    </strong>
+
+                    <small>
+                        Pay electricity
+                    </small>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+
+ 
+
+  <!-- RECENT TRANSACTIONS -->
+
+<section class="dashboard-section">
+
+    <div class="section-heading">
+
+     <h3>Recent Transactions</h3>
+
+        <a href="#" id="viewAllTransactions">
+            View All
+        </a>
+
+    </div>
+
+
+    <div
+        class="transactions-list"
+        id="transactionsList" >
+
+        <div class="empty-transactions">
+
+            <div>📋</div>
+
+  <h4>Loading transactions...</h4>
+
+            <p>
+                Please wait...
+            </p>
+
+        </div>
+
+    </div>
+
+</section>      
+        
+<!-- PROFILE -->
+
+<section
+    class="dashboard-section profile-section"
+    id="profile">
+
+    <div class="section-heading">
+
+        <h3>
+            My Profile
+        </h3>
+
+        <span>
+            Account information
+        </span>
+
+    </div>
+
+
+    <div class="profile-card">
+
+
+        <div class="profile-avatar"
+             id="profileAvatar">
+
+            U
+
+        </div>
+
+
+        <div class="profile-details">
+
+            <div class="profile-item">
+
+                <span>
+                    Full Name
+                </span>
+
+                <strong id="profileName">
+                    Loading...
+                </strong>
+
+            </div>
+
+
+            <div class="profile-item">
+
+                <span>
+                    Email
+                </span>
+
+                <strong id="profileEmail">
+                    Loading...
+                </strong>
+
+            </div>
+
+
+            <div class="profile-item">
+
+                <span>
+                    Phone Number
+                </span>
+
+                <strong id="profilePhone">
+                    Loading...
+                </strong>
+
+            </div>
+
+
+            <div class="profile-item">
+
+                <span>
+                    Account Type
+                </span>
+
+                <strong id="profileRole">
+                    Loading...
+                </strong>
+
+            </div>
+
+
+            <div class="profile-item">
+
+                <span>
+                    Account Status
+                </span>
+
+                <strong
+                    id="profileStatus"
+                    class="status-active">
+
+                    Active
+
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+
+    <!-- SUPABASE -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

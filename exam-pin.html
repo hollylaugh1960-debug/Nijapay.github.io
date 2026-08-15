@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Exam PINs | Jodek PAY</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/services.css">
+
+</head>
+
+
+<body class="service-body">
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="service-header">
+
+        <a href="dashboard.html"
+           class="back-dashboard">
+
+            ← Dashboard
+
+        </a>
+
+
+        <div class="service-logo">
+
+            JODEK <span>PAY</span>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="service-main">
+
+
+        <!-- ================= INTRO ================= -->
+
+        <section class="service-intro">
+
+            <div class="service-big-icon">
+                🎓
+            </div>
+
+            <div>
+
+                <p class="service-label">
+                    EXAMINATION
+                </p>
+
+                <h1>
+                    Examination
+                    <span>PINs</span>
+                </h1>
+
+                <p>
+                    Purchase WAEC, NECO and NABTEB
+                    examination PINs quickly and securely.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <section class="service-layout">
+
+
+            <!-- ================= FORM ================= -->
+
+            <div class="service-card-form">
+
+
+                <div class="form-heading">
+
+                    <h2>
+                        Buy Examination PIN
+                    </h2>
+
+                    <p>
+                        Select your examination and
+                        enter the quantity.
+                    </p>
+
+                </div>
+
+
+
+                <form id="examForm">
+
+
+                    <!-- ================= EXAMINATION ================= -->
+
+                    <div class="form-group">
+
+                        <label for="examType">
+                            Examination
+                        </label>
+
+                        <select
+                            id="examType"
+                            name="examType"
+                            required>
+
+                            <option value="">
+                                Select examination
+                            </option>
+
+                            <option value="waec">
+                                WAEC
+                            </option>
+
+                            <option value="neco">
+                                NECO
+                            </option>
+
+                            <option value="nabteb">
+                                NABTEB
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- ================= QUANTITY ================= -->
+
+                    <div class="form-group">
+
+                        <label for="examQuantity">
+                            Quantity
+                        </label>
+
+                        <input
+                            type="number"
+                            id="examQuantity"
+                            name="examQuantity"
+                            min="1"
+                            value="1"
+                            inputmode="numeric"
+                            required>
+
+                    </div>
+
+
+
+                    <!-- ================= PAYMENT METHOD ================= -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Payment Method
+                        </label>
+
+                        <div class="payment-option">
+
+                            💰
+                            <strong>
+                                Wallet Balance
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ================= SUMMARY ================= -->
+
+                    <div class="payment-summary">
+
+
+                        <div>
+
+                            <span>
+                                Examination
+                            </span>
+
+                            <strong id="summaryExam">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Quantity
+                            </span>
+
+                            <strong id="summaryQuantity">
+                                1
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Price per PIN
+                            </span>
+
+                            <strong id="summaryExamPrice">
+                                ₦0.00
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Total
+                            </span>
+
+                            <strong id="summaryExamTotal">
+                                ₦0.00
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- ================= SUBMIT ================= -->
+
+                    <button
+                        type="submit"
+                        class="service-submit"
+                        id="purchaseExamBtn">
+
+                        Continue
+
+                    </button>
+
+
+                </form>
+
+            </div>
+
+
+
+            <!-- ================= SIDEBAR ================= -->
+
+            <aside class="service-sidebar">
+
+
+                <!-- WALLET -->
+
+                <div class="balance-card">
+
+                    <span>
+                        Wallet Balance
+                    </span>
+
+                    <strong id="walletBalance">
+                        ₦0.00
+                    </strong>
+
+                    <a href="dashboard.html">
+                        + Fund Wallet
+                    </a>
+
+                </div>
+
+
+
+                <!-- INFORMATION -->
+
+                <div class="info-card">
+
+                    <div>
+                        💡
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Before you continue
+                        </strong>
+
+                        <p>
+                            Select the correct examination
+                            and quantity before payment.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SECURITY -->
+
+                <div class="info-card">
+
+                    <div>
+                        🔒
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Secure Payment
+                        </strong>
+
+                        <p>
+                            Your transaction will be
+                            processed securely through
+                            your JODEK PAY wallet.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </aside>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= SUPABASE ================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="js/services.js"></script>
+
+
+</body>
+
+</html>
